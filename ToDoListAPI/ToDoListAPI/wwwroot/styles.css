@@ -40,8 +40,21 @@ body {
     }
 
     .done {
+      transition: color 0.3s, text-decoration 0.3s;
       text-decoration: line-through;
       color: gray;
+    }
+    .done button {
+      text-decoration: none;
+    }
+    .done-btn {
+        background-color: #00ff2a;
+    }
+    .hide {
+      display: none;
+    }
+    .done-btn:hover {
+        background-color: #3bbf00;
     }
 
     button {
