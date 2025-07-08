@@ -15,11 +15,12 @@
   </form>
   <div style="margin-top: 20px;">
     <strong>Filter:</strong>
-    <button onclick="filterTasks('all')">All</button>
-    <button onclick="filterTasks('active')">Active</button>
-    <button onclick="filterTasks('completed')">Completed</button>
+    <button id="allBtn" onclick="filterTasks('all')">All</button>
+    <button id="activeBtn" onclick="filterTasks('active')">Active</button>
+    <button id= "completedBtn" onclick="filterTasks('completed')">Completed</button>
   </div>
   <ul id="taskList" style="margin-top: 20px;"></ul>
+  <button id="clearAllBtn">Clear All Tasks</button>
   <script src="script.js"></script>
 </body>
 </html>

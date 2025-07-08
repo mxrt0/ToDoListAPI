@@ -40,9 +40,10 @@ body {
     }
 
     .done {
-      transition: color 0.3s, text-decoration 0.3s;
-      text-decoration: line-through;
-      color: gray;
+      opacity: 0.5;
+    transform: translateX(5px);
+    transition: all 0.3s ease;
+    text-decoration: line-through;
     }
     .done button {
       text-decoration: none;
@@ -50,11 +51,13 @@ body {
     .done-btn {
         background-color: #00ff2a;
     }
+    
     .hide {
       display: none;
     }
     .done-btn:hover {
         background-color: #3bbf00;
+        transform: scale(1.07);
     }
 
     button {
@@ -67,14 +70,35 @@ body {
     }
     
     button:hover {
-  background-color: #00fff7; 
+  background-color: #bc6a6b; 
   color: white;
   transform: scale(1.05);    
+}
+#allBtn:hover{
+  background-color: #bc6a6b; 
+  color: white;
+  transform: scale(1.05);
+}
+#activeBtn:hover{
+  background-color: #bc6a6b; 
+  color: white;
+  transform: scale(1.05);
+}
+#completedBtn:hover{
+  background-color: #bc6a6b; 
+  color: white;
+  transform: scale(1.05);
 }
 #add-btn:hover {
   background-color: #5eff00; 
   color: white;
   transform: scale(1.1);    
 }
+#clearAllBtn:hover {
+        background-color: #ff0800d6; 
+      color: white;
+      transform: scale(1.05); 
+      
+    }
 
     

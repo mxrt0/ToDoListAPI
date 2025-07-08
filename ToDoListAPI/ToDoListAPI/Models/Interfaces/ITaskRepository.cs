@@ -5,6 +5,7 @@
         bool AddTask(TaskItem task);
         List<TaskItem> GetAllTasks();
         bool MarkTaskDone(string id);
+        bool ClearAllTasks();
 
     }
 }

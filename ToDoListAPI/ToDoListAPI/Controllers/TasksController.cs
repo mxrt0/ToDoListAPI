@@ -50,6 +50,19 @@ namespace ToDoListAPI.Controllers
                 return NotFound("Task not found.");
             }
         }
+        [HttpDelete("clearAll")]
+        public IActionResult ClearAllTasks()
+        {
+            if (_repo.ClearAllTasks())
+            {
+                return Ok();
+            }
+            else
+            {
+                return BadRequest("There are currently no tasks.");
+            }
+
+        }
         
     }
 }
